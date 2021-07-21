@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tabuleiro</title>
+	</head>
+	<body>
+		<canvas width="600" height="400"></canvas>
+		<script type="text/javascript">
+			var tela = document.querySelector("canvas");
+			var pincel = tela.getContext('2d');
+			var cor = 'white';
+			var x;
+			var y;
+
+			function desenha(x, y, cor){
+				pincel.fillStyle = cor;
+				pincel.fillRect (x, y, 50, 50);
+				pincel.strokeStyle='black';
+				pincel.strokeRect(x, y, 50, 50);
+			}
+
+			for(x=0; x<400; x=x+50){
+				if(cor=='white'){
+					cor='black';
+				}
+				else{
+					cor='white';
+				}
+				for(y=0; y<400; y=y+50){
+					desenha(x, y, cor);
+					if(cor=='black'){
+						cor = 'white';
+					}
+					else{
+						cor = 'black';
+					}
+					
+				}
+			}
+		</script>
+	</body>
+</html>
