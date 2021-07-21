@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Media</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var nota1 = parseFloat(prompt("Digite a primeira nota"));
+			var nota2 = parseFloat(prompt("Digite a segunda nota"));
+			var nota3 = parseFloat(prompt("Digite a terceira nota"));
+
+
+			var media = (nota1+nota2+nota3)/3;
+
+			if(media>=6){
+				document.write("Sua média é " + media.toFixed(1) + " e você está aprovado! Parabéns!!")
+			}
+			else{
+				document.write("Sua média é " + media.toFixed(1) + " e você está reprovado!")
+			}
+		</script>
+	</body>
+</html>
