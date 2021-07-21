@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <title>Exercício</title>
+    </header>
+    <body>
+        <script>
+            /* Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120*/
+            var numero;
+            var fatorial = 1;
+
+            numero = parseInt(prompt("Digite o numero desejado"));
+
+            for(i=numero; i>=1; i--){
+            	fatorial = fatorial * i;
+            }
+
+            document.write("O fatorial de " +numero+ " é: " +fatorial);
+        </script>
+    </body>
+</html>
